@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChatGPT UI Clone</title>
+  <link rel="stylesheet" href="css/styles.css" /> 
+</head>
+<body class="dark">
+  <div class="sidebar" id="sidebar">
+    <h2>Copilot</h2>
+    <div class="button-row">
+      <button class="new-chat" onclick="newChat()">+ New Chat</button>
+      <!-- <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button> -->
+    </div>
+    <div class="chat-history" id="chatHistory">
+      <!-- Chat history will be dynamically populated -->
+    </div>
+  </div> 
+
+  <div class="chat-container">
+    <div class="chat-window" id="chatWindow"></div>
+    <div id="loadingIndicator" style="display: none; text-align: center; color: gray;">Assistant is typing...</div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()" class="send-button">
+        <img src="assets/send-icon.png" alt="Send" />
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

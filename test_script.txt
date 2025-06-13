@@ -1,0 +1,30 @@
+1. General Understanding
+Q: What is the main focus of the Capgemini Consumer Trends 2025 report?
+Expected: Summary of key consumer behavior trends, including Gen AI adoption, sustainability, quick commerce, and social commerce.
+2. Consumer Clusters
+Q: Can you explain the five consumer behavior clusters identified in the report?
+Expected: Overview of clusters like Digital-First Trailblazers, Educated Rationalists, etc., with demographic and behavioral traits.
+3. Gen AI in Retail
+Q: How are consumers using generative AI in their shopping experiences?
+Expected: Stats on usage, satisfaction, and preferences for Gen AI tools, including chatbot support and personalized recommendations.
+4. Sustainability Trends
+Q: What role does sustainability play in consumer purchasing decisions?
+Expected: Insights into carbon labeling, food waste reduction, and willingness to pay premiums for sustainable products.
+5. Social Commerce
+Q: How is social media influencing consumer purchases?
+Expected: Data on Gen Z and millennials using platforms like Instagram and TikTok for product discovery and purchases.
+6. Quick Commerce
+Q: What are the trends around quick commerce and delivery expectations?
+Expected: Preferences for 2-hour and 10-minute delivery, willingness to pay extra, and market projections.
+7. Brand Loyalty and Switching
+Q: Why are consumers switching brands or retailers?
+Expected: Reasons like lack of personalization, sustainability concerns, and better experiences elsewhere.
+8. Retail Media Networks
+Q: What are retail media networks and how are they evolving?
+Expected: Explanation of RMNs, key players, and consumer attention metrics.
+9. In-Store vs Online Shopping
+Q: Are consumers preferring online or in-store shopping in 2025?
+Expected: Trends by age group and cluster, with stats on interaction levels.
+10. Future Outlook
+Q: What recommendations does the report make for retailers and brands?
+Expected: Suggestions around Gen AI adoption, personalization, sustainability, and omnichannel strategies.
