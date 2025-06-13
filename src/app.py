@@ -3,6 +3,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from chat_code import ask_chatbot
 
+# This is a test comment to trigger deployment
+
 app = Flask(__name__)
 CORS(app)  # Allow frontend to access this API
 
