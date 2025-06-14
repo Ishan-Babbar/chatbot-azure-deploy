@@ -37,7 +37,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       env:
-        SCM_DO_BUILD_DURING_DEPLOYMENT: true
+        
         ENABLE_ORYX_BUILD: true
       with:
         app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
