@@ -40,5 +40,5 @@ jobs:
 
     - name: Verify deployment
       run: |
-        sleep 30
+        sleep 60
         curl -f https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net || exit 1
