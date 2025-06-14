@@ -34,11 +34,9 @@ jobs:
     - name: List installed packages
       run: pip list
 
-    - name: Login to Azure
-      uses: azure/login@v1
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v2
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - name: Deploy using Azure CLI (Kudu)
-      run: |
-        az webapp up --name ${{ secrets.AZURE_WEBAPP_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --location ${{ secrets.AZURE_LOCATION }} --runtime "PYTHON|3.11" --sku F1
+        app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: .
