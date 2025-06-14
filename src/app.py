@@ -7,7 +7,7 @@ from chat_code import ask_chatbot
 
 app = Flask(__name__)
 CORS(app)  # Allow frontend to access this API
-
+    
 @app.route("/api/chat", methods=["POST"])
 def chat():
     data = request.get_json()
