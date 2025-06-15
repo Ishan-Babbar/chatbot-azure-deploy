@@ -35,7 +35,10 @@ jobs:
 
     - name: Prepare ZIP package
       run: |
-        zip -r app.zip . -x "*.git*" -x "*__pycache__*" -x "*.pytest_cache*" -x "*.venv/*"
+        mkdir package
+        cp -r src chatenv requirements.txt package/
+        cd package
+        zip -r ../app.zip . > /dev/null
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
