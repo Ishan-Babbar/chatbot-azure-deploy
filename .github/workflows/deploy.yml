@@ -1,4 +1,4 @@
-name: Deploy Flask App to Azure App Service
+name: Build and Deploy Flask App to Azure
 
 on:
   push:
@@ -26,19 +26,20 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
 
-    - name: Install dependencies
+    - name: Create virtual environment and install dependencies
       run: |
+        python -m venv chatenv
+        source chatenv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: List installed packages
-      run: pip list
+    - name: Prepare ZIP package
+      run: |
+        zip -r app.zip . -x "*.git*" -x "*__pycache__*" -x "*.pytest_cache*" -x "*.venv/*"
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: .
-
-        
+        package: app.zip
