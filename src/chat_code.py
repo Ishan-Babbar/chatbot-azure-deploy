@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from openai import AzureOpenAI
-from retriever import retrieve_top_k, filter_chunks, is_out_of_domain
+from .retriever import retrieve_top_k, filter_chunks, is_out_of_domain
 from utils.prompt_loader import load_prompt
 from utils.logger import log_interaction, log_error
 from utils.feedback_logger import log_feedback
