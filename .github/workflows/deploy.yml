@@ -26,25 +26,14 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
 
-    - name: Create virtual environment and install dependencies
+    - name: Install dependencies
       run: |
-        python -m venv chatenv
-        source chatenv/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
-    - name: Prepare ZIP package (leaner)
-      run: |
-        mkdir -p package/chatenv
-        cp -r src requirements.txt package/
-        cp -r chatenv/lib/python3.11/site-packages package/chatenv/
-        cp -r chatenv/bin package/chatenv/
-        cd package
-        zip -r ../app.zip . > /dev/null
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: app.zip
+        package: .
