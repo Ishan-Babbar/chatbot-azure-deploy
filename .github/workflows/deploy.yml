@@ -34,7 +34,7 @@ jobs:
     - name: Prepare deployment package
       run: |
         mkdir deploy
-        cp -r src utils chunks data embeddings evaluation logs prompts frontend requirements.txt .env deploy/
+        cp -r src utils chunks data embeddings evaluation prompts frontend requirements.txt deploy/
         cd deploy
         zip -r ../app.zip .
         cd ..
