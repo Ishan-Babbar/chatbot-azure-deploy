@@ -33,10 +33,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Prepare ZIP package
+    - name: Prepare ZIP package (leaner)
       run: |
-        mkdir package
-        cp -r src chatenv requirements.txt package/
+        mkdir -p package/chatenv
+        cp -r src requirements.txt package/
+        cp -r chatenv/lib/python3.11/site-packages package/chatenv/
+        cp -r chatenv/bin package/chatenv/
         cd package
         zip -r ../app.zip . > /dev/null
 
