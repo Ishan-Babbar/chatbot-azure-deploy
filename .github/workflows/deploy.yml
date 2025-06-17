@@ -29,7 +29,7 @@ jobs:
     - name: Install dependencies into root of deployment package
       run: |
         mkdir deploy
-        cp -r src utils data frontend embeddings chunks prompts requirements.txt .env deploy/
+        cp -r src utils frontend prompts requirements.txt deploy/
         python -m pip install --upgrade pip
         python -m pip install --target=deploy --no-cache-dir -r requirements.txt
         cd deploy
