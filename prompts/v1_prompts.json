@@ -1,0 +1,33 @@
+{
+    "version": "v1",
+    "description": "Refined prompt strategies for CoT, ToT, GoT, strict, casual and default modes",
+    "strategies": {
+      "cot": {
+        "name": "Chain of Thought",
+        "template": "Use the following context to answer the question clearly and logically.\n\nContext:\n{context}\n\nQuestion:\n{query}\n\nAnswer:"
+      },
+      "tot": {
+        "name": "Tree of Thought",
+        "template": "Use the context to consider different possibilities and choose the best answer.\n\nContext:\n{context}\n\nQuestion:\n{query}\n\nAnswer:"
+      },
+      "got": {
+        "name": "Graph of Thought",
+        "template": "Use the context to connect relevant ideas and provide a well-reasoned answer.\n\nContext:\n{context}\n\nQuestion:\n{query}\n\nAnswer:"
+      },
+      "strict": {
+        "name": "Strict Context Only",
+        "template": "Answer the question using only the information in the context. If the answer is not in the context, say: \"I'm sorry, I don't have enough information to answer that based on the provided data.\"\n\nContext:\n{context}\n\nQuestion:\n{query}\n\nAnswer:"
+      },
+      "casual": {
+        "template": "Respond briefly and conversationally.\n\nUser: {query}\n\nAssistant:"
+      },
+      "default": {
+        "name": "Default",
+        "template": "Use the following context to answer the question.\n\nContext:\n{context}\n\nQuestion:\n{query}\n\nAnswer:"
+      }
+    },
+    "model": {
+      "name": "gpt-4o-mini-voc2",
+      "api_version": "2023-05-15"
+    }
+  }  

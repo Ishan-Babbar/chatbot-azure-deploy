@@ -1,0 +1,72 @@
+[
+  {
+    "query": "What percentage of Gen Z consumers use generative AI in shopping?",
+    "expected": "45% of Gen Z consumers use generative AI in shopping.",
+    "answer": ""
+  },
+  {
+    "query": "What are the key consumer clusters identified in the report?",
+    "expected": "The report identifies clusters such as tech-savvy consumers, sustainability-focused consumers, and value-driven consumers.",
+    "answer": ""
+  },
+  {
+    "query": "How is sustainability influencing consumer behavior?",
+    "expected": "Sustainability is a major factor influencing consumer behavior, with many consumers preferring brands that are environmentally friendly and socially responsible.",
+    "answer": ""
+  },
+  {
+    "query": "What role does social commerce play in consumer trends?",
+    "expected": "Social commerce is becoming increasingly important, with consumers using social media platforms to discover and purchase products.",
+    "answer": ""
+  },
+  {
+    "query": "What are the main reasons consumers switch brands?",
+    "expected": "Consumers switch brands mainly due to lack of personalization, better experience offered by competitors, and dissatisfaction with current brand.",
+    "answer": ""
+  },
+  {
+    "query": "How are brands leveraging generative AI?",
+    "expected": "Brands are leveraging generative AI for personalized marketing, product recommendations, and enhancing customer experience.",
+    "answer": ""
+  },
+  {
+    "query": "What is the impact of Gen Z on consumer trends?",
+    "expected": "Gen Z is significantly impacting consumer trends with their preference for digital experiences, sustainability, and social commerce.",
+    "answer": ""
+  },
+  {
+    "query": "How important is personalization in consumer trends?",
+    "expected": "Personalization is extremely important, with consumers expecting tailored experiences and recommendations.",
+    "answer": ""
+  },
+  {
+    "query": "What are the future predictions for consumer behavior?",
+    "expected": "Future predictions include increased use of AI, greater emphasis on sustainability, and more integration of social commerce.",
+    "answer": ""
+  },
+  {
+    "query": "How are consumers responding to brand transparency?",
+    "expected": "Consumers are responding positively to brand transparency, valuing honesty and openness about products and practices.",
+    "answer": ""
+  },
+  {
+    "query": "What is the most surprising consumer trend?",
+    "expected": "The most surprising consumer trend is the rapid adoption of generative AI by older generations.",
+    "answer": ""
+  },
+  {
+    "query": "How do consumer trends differ between Gen Z and Millennials?",
+    "expected": "Gen Z prefers digital experiences and sustainability, while Millennials focus more on value and brand loyalty.",
+    "answer": ""
+  },
+  {
+    "query": "What are the top trends and how do they affect Gen Z and Millennials differently?",
+    "expected": "Top trends include generative AI, sustainability, and social commerce. Gen Z prefers digital experiences and sustainability, while Millennials focus more on value and brand loyalty.",
+    "answer": ""
+  },
+  {
+    "query": "How are brands using AI and what impact does it have on consumer behavior?",
+    "expected": "Brands use AI for personalized marketing and product recommendations, which enhances customer experience and influences purchasing decisions.",
+    "answer": ""
+  }
+]

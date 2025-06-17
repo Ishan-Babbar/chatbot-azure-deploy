@@ -1,0 +1,12 @@
+{
+  "BERTScore": {
+    "Precision": -0.29152798652648926,
+    "Recall": 0.31959104537963867,
+    "F1": -0.0034436567220836878
+  },
+  "GPT-based Evaluation": {},
+  "Exact Match Ratio": 0.0,
+  "Average Fuzzy Score": 3.857142857142857,
+  "BLEU Score": 0.007006187923422843,
+  "ROUGE-L Score": 0.055692724274617696
+}

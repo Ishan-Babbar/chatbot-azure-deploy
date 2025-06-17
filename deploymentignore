@@ -1,0 +1,10 @@
+
+# Exclude virtual environment
+chatenv/
+venv/
+
+# Exclude unnecessary files
+*.pyc
+__pycache__/
+*.xlsx
+*.png

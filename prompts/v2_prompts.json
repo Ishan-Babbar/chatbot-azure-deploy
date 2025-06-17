@@ -1,0 +1,33 @@
+{
+    "version": "v1",
+    "description": "Prompt strategies for CoT, ToT, GoT, strict, casual and default modes",
+    "strategies": {
+      "cot": {
+        "name": "Chain of Thought",
+        "template": "You are a thoughtful assistant. Use the context below to answer the question step-by-step.\nContext:\n{context}\nQuestion:\n{query}\nLet's think step by step."
+      },
+      "tot": {
+        "name": "Tree of Thought",
+        "template": "You are a strategic assistant. Use the context below to explore multiple possible answers to the question. Then choose the best one.\nContext:\n{context}\nQuestion:\n{query}\nExplore different reasoning paths and then decide the best answer."
+      },
+      "got": {
+        "name": "Graph of Thought",
+        "template": "You are a critical-thinking assistant. Use the context below to connect different ideas and evaluate them to answer the question.\nContext:\n{context}\nQuestion:\n{query}\nConnect relevant ideas and provide a well-reasoned answer."
+      },
+      "strict": {
+        "name": "Strict Context Only",
+        "template": "You are a helpful assistant. Use only the information provided in the context below to answer the question. \nIf the answer is not in the context, respond with: \"I'm sorry, I don't have enough information to answer that based on the provided data.\"\nContext:\n{context}\nQuestion:\n{query}\nAnswer:"
+      },
+      "casual": {
+      "template": "You are a friendly assistant. Respond briefly and conversationally.\nUser: {query}\nAssistant:"
+    },  
+      "default": {
+        "name": "Default",
+        "template": "You are a helpful assistant. Use the context below to answer the question.\nContext:\n{context}\nQuestion:\n{query}\nAnswer:"
+      }
+    },
+    "model": {
+      "name": "gpt-4o-mini-voc2",
+      "api_version": "2023-05-15"
+    }
+  }  
